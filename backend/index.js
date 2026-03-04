@@ -13,7 +13,7 @@ app.use(cors());
 
 // Database connection with MongoDB
 
-mongoose.connect("mongodb+srv://Jodene:Password@cluster0.vt8rdo6.mongodb.net/reactpetpaw");
+mongoose.connect("mongodb+srv://User:Password@cluster0.vt8rdo6.mongodb.net/reactpetpaw");
 
 //API Creation
 
