@@ -1,0 +1,36 @@
+.breadcrum{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    padding: 20px 120px;
+    background: #F4A3AD;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+/* Arrow icon */
+.breadcrum img{
+    width: 10px;
+    height: 10px;
+    opacity: 0.6;
+}
+
+/* Highlight last item (product name) */
+.breadcrum span:last-child{
+    color: #222;
+    font-weight: 600;
+}
+
+/* Hover effect for clickable items */
+.breadcrum span{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.breadcrum span:hover{
+    color: #ff4141;
+}

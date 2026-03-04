@@ -1,0 +1,117 @@
+.item{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* IMAGE */
+.item img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+
+/* TITLE */
+.item p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* PRICES */
+.item-prices{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.item-price-new{
+    color: #374151;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.item-price-old{
+    color: #8c8c8c;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+
+/* HOVER EFFECT */
+.item:hover{
+    transform: translateY(-6px);
+}
+
+
+/* ========================== */
+/* TABLET */
+/* ========================== */
+@media(max-width:1024px){
+
+    .item img{
+        height: 220px;
+    }
+
+    .item p{
+        font-size: 15px;
+    }
+
+    .item-price-new{
+        font-size: 15px;
+    }
+
+    .item-price-old{
+        font-size: 13px;
+    }
+
+}
+
+
+/* ========================== */
+/* MOBILE */
+/* ========================== */
+@media(max-width:768px){
+
+    .item img{
+        height: 200px;
+    }
+
+    .item p{
+        font-size: 14px;
+    }
+
+    .item-prices{
+        gap: 8px;
+    }
+
+}
+
+
+/* ========================== */
+/* SMALL MOBILE */
+/* ========================== */
+@media(max-width:480px){
+
+    .item img{
+        height: 160px;
+    }
+
+    .item p{
+        font-size: 13px;
+    }
+
+    .item-price-new{
+        font-size: 14px;
+    }
+
+    .item-price-old{
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,181 @@
+.cart{
+    padding: 60px 120px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cart h1{
+    text-align: center;
+    color: #F4A3AD;
+    font-weight: 500;
+}
+
+/* GRID */
+.cart-grid{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr 1.5fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.cart-header{
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+}
+
+.cart-row{
+    border-bottom: 1px solid #eee;
+}
+
+.cart-row img{
+    width: 70px;
+}
+
+/* QUANTITY */
+.cart-quantity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-quantity button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #F4A3AD;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-quantity span{
+    min-width: 20px;
+    text-align: center;
+}
+
+/* REMOVE BUTTON */
+.cart-remove{
+    background: #F4A3AD;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* TOTAL SECTION */
+.cartitems-down{
+    display: flex;
+    justify-content: flex-start; /* aligns to left */
+    margin: 80px 0;
+    width: 100%;
+}
+
+.cartitems-total{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* FIXED: correct property */
+.cartitems-total h1{
+    text-align: left;
+    color: black;
+    margin: 0;
+}
+
+.cartitems-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.cartitems-total button{
+    width: 100%;
+    max-width: 262px;
+    height: 58px;
+    border: none;
+    background: #F4A3AD;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* CHECKOUT BUTTON */
+.cart-checkout-btn{
+    padding: 15px 40px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.cart-checkout-btn:hover{
+    background: #F4A3AD;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px){
+    .cart{
+        padding: 40px 40px;
+    }
+
+    .cart-grid{
+        grid-template-columns: 80px 2fr 1fr 1.5fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .cartitems-total{
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .cart{
+        padding: 30px 20px;
+    }
+
+    .cart-grid{
+        grid-template-columns: 60px 2fr 1fr;
+        gap: 10px;
+    }
+
+    /* hide less important columns on mobile */
+    .cart-grid div:nth-child(4),
+    .cart-grid div:nth-child(5),
+    .cart-grid div:nth-child(6){
+        display: none;
+    }
+
+    .cart-row img{
+        width: 50px;
+    }
+
+    .cartitems-down{
+        margin: 50px 0;
+    }
+
+    .cartitems-total h1{
+        font-size: 22px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px){
+    .cart{
+        padding: 20px 15px;
+    }
+
+    .cartitems-total h1{
+        font-size: 20px;
+    }
+}

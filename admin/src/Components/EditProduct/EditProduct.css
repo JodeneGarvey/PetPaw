@@ -1,0 +1,90 @@
+.edit-product{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+.edit-product input,
+.edit-product textarea,
+.edit-product select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.edit-product button{
+    background: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.productlist-edit-btn{
+    background: #4CAF50;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.productlist-edit-btn:hover{
+    background: #2e7d32;
+}
+.edit-product{
+    width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+.edit-product h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-image-preview{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #eee;
+}
+
+.image-upload-btn{
+    background: #ff4141;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.edit-product input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.update-btn{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}

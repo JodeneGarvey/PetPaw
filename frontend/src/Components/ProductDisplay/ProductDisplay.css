@@ -1,0 +1,174 @@
+.productdisplay{
+    display: flex;
+    gap: 60px;
+    padding: 60px 120px;
+    background: #fff;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* LEFT IMAGE */
+.productdisplay-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productdisplay-main-img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+/* RIGHT INFO */
+.productdisplay-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productdisplay-right h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+/* PRICE */
+.productdisplay-price{
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff4141;
+}
+
+.productdisplay-oldprice{
+    text-decoration: line-through;
+    font-size: 18px;
+    color: #777;
+}
+
+
+/* DESCRIPTION */
+.productdisplay-description{
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+/* QUANTITY */
+.productdisplay-quantity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productdisplay-quantity input{
+    width: 60px;
+    padding: 6px;
+}
+
+
+/* BUTTON */
+.productdisplay-cart-btn{
+    width: 200px;
+    padding: 15px;
+    border: none;
+    background: #F4A3AD;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.productdisplay-cart-btn:hover{
+    transform: scale(1.05);
+}
+
+
+/* EXTRA INFO */
+.productdisplay-extra{
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+}
+✅ Tablet Responsive
+@media(max-width:1024px){
+
+    .productdisplay{
+        padding: 40px 60px;
+        gap: 40px;
+    }
+
+    .productdisplay-main-img{
+        max-width: 300px;
+    }
+
+    .productdisplay-right h1{
+        font-size: 26px;
+    }
+
+    .productdisplay-price{
+        font-size: 24px;
+    }
+
+}
+✅ Mobile Responsive (stack vertically)
+@media(max-width:768px){
+
+    .productdisplay{
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .productdisplay-main-img{
+        max-width: 280px;
+    }
+
+    .productdisplay-right{
+        align-items: center;
+        text-align: center;
+    }
+
+    .productdisplay-right h1{
+        font-size: 22px;
+    }
+
+    .productdisplay-price{
+        font-size: 22px;
+    }
+
+    .productdisplay-description{
+        font-size: 15px;
+    }
+
+    .productdisplay-cart-btn{
+        width: 100%;
+        max-width: 250px;
+    }
+
+}
+✅ Small Mobile
+@media(max-width:480px){
+
+    .productdisplay-main-img{
+        max-width: 220px;
+    }
+
+    .productdisplay-right h1{
+        font-size: 18px;
+    }
+
+    .productdisplay-price{
+        font-size: 18px;
+    }
+
+    .productdisplay-description{
+        font-size: 14px;
+    }
+
+}

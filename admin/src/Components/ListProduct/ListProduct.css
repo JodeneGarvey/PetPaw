@@ -1,0 +1,59 @@
+.product-list{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.product-list h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table container */
+.productlist-table{
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Header row */
+.productlist-format-main{
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 120px;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Product rows */
+.productlist-format{
+    font-weight: 500;
+    color: #666;
+}
+
+/* Product image */
+.productlist-product-icon{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* Remove button */
+.productlist-remove-btn{
+    background: #ff4d4d;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.productlist-remove-btn:hover{
+    background: #e60000;
+}
